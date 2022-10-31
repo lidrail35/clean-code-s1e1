@@ -54,7 +54,9 @@ li,
   list-style: none;
 }
 
-input,
+/*input,*/
+.input-checkbox,
+.input-text,
 .button {
   outline: none;
 }

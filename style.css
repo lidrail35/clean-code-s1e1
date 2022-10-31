@@ -86,7 +86,8 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+/*input[type="text"] */
+.input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,7 +100,8 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+/*input[type="text"]:focus*/
+.input-text:focus {
   color: #333;
 }
 
@@ -138,7 +140,8 @@ li > label {
   width: 226px;
 }
 
-li > input[type="text"] {
+/*li > input[type="text"]*/
+li > .input-text {
   width: 226px;
 }
 
@@ -159,11 +162,13 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+/*ul li input[type=text]*/
+ul li .input-text {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+/*ul li.editMode input[type=text]*/
+ul li.editMode .input-text {
   display: inline-block;
   width: 224px;
 }

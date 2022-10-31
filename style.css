@@ -50,7 +50,7 @@ ul {
 }
 
 li, 
-h3 {
+.main__header-sectionh3 {
   list-style: none;
 }
 
@@ -75,7 +75,7 @@ input,
 }
 
 /* Heading */
-h3,
+.main__header-section,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;

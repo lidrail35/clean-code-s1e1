@@ -51,7 +51,7 @@
   padding: 0px;
 }
 
-li, 
+.list-item, 
 .main__header-section {
   list-style: none;
 }
@@ -120,7 +120,8 @@ input#new-task {
 }
 
 /* Task list */
-li {
+/*li*/
+.list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -129,15 +130,15 @@ li {
   align-items: center;
 }
 
-li > * {
+.list-item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.list-item > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-li > label {
+.list-item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -145,7 +146,7 @@ li > label {
 }
 
 /*li > input[type="text"]*/
-li > .input-text {
+.list-item > .input-text {
   width: 226px;
 }
 
@@ -168,22 +169,22 @@ li > .input-text {
 
 /* Edit Task */
 /*ul li input[type=text]*/
-.main__list-todo_list li .input-text,
-.main__completed_list li .input-text
+.main__list-todo_list .list-item .input-text,
+.main__completed_list .list-item .input-text
 /*ul li .input-text*/ {
   display: none;
 }
 
 /*ul li.editMode input[type=text]*/
-.main__list-todo_list li.editMode .input-text,
-.main__completed_list li.editMode .input-text
+.main__list-todo_list .editMode .input-text,
+.main__completed_list .editMode .input-text
 /*ul li.editMode .input-text*/ {
   display: inline-block;
   width: 224px;
 }
 
-.main__list-todo_list li.editMode label,
-.main__completed_list li.editMode label
+.main__list-todo_list .editMode label,
+.main__completed_list .editMode label
 /*ul li.editMode label*/ {
   display: none;
 }

@@ -8,7 +8,7 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task");//Add a new task.
+var taskInput=document.querySelector(".new");//Add a new task.
 //var addButton=document.getElementsByTagName("button")[0];//first button
 var addButton=document.querySelectorAll("button")[0];//first button
 var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
@@ -36,10 +36,11 @@ var createNewTaskElement=function(taskString){
     listItem.className="list-item"
 
     label.innerText=taskString;
-    label.className='task';
+    label.className='task item-label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className='input-checkbox';
     editInput.type="text";
     editInput.className="task input-text";
 
@@ -48,6 +49,7 @@ var createNewTaskElement=function(taskString){
 
     deleteButton.className="delete button";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className='button-icon';
     deleteButton.appendChild(deleteButtonImg);
 
 

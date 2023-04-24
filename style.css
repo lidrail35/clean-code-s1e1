@@ -136,11 +136,11 @@
   vertical-align: middle;
 }
 
-.list-item > input[type="checkbox"] {
+.input-checkbox {
   margin: 0 10px;
 }
 
-.list-item > label {
+.task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -152,18 +152,18 @@
   width: 226px;
 }
 
-.button.delete img {
+.button-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button.delete img:hover {
+.button-icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.main__completed_list label
+.main__completed_list .task
 /*ul#completed-tasks label*/ {
   text-decoration: line-through;
   color: #888;
@@ -185,8 +185,8 @@
   width: 224px;
 }
 
-.main__list-todo_list .editMode label,
-.main__completed_list .editMode label
+.main__list-todo_list .editMode .item-label,
+.main__completed_list .editMode .item-label
 /*ul li.editMode label*/ {
   display: none;
 }

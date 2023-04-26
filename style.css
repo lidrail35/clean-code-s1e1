@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.accept-job {
   display: flex;
 }
 
@@ -56,6 +56,7 @@
 }
 
 .input-checkbox,
+.accept-job__input-task,
 .input-text,
 .button {
   outline: none;
@@ -77,7 +78,7 @@
 
 /* Heading */
 .main__header-section,
-.label__new-task {
+.new-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,6 +88,7 @@
   text-transform: uppercase;
 }
 
+.accept-job__input-task,
 .input-text {
   margin: 0;
   font-size: 18px;
@@ -100,12 +102,13 @@
   color: #888;
 }
 
+.accept-job__input-task:focus,
 .input-text:focus {
   color: #333;
 }
 
 /* New Task */
-.label__new-task {
+.new-task__label {
   display: block;
   margin: 0 0 20px;
 }

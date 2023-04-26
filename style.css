@@ -165,13 +165,13 @@
   display: none;
 }
 
-.main__list-todo_list .editMode .input-text,
-.main__completed_list .editMode .input-text {
+.main__list-todo_list .edit-mode .input-text,
+.main__completed_list .edit-mode .input-text {
   display: inline-block;
   width: 224px;
 }
 
-.main__list-todo_list .editMode .item-label,
-.main__completed_list .editMode .item-label {
+.main__list-todo_list .edit-mode .item-label,
+.main__completed_list .edit-mode .item-label {
   display: none;
 }

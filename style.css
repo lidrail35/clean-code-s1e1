@@ -72,7 +72,7 @@
 }
 
 .button:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 /* Heading */
@@ -93,8 +93,8 @@
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
@@ -165,13 +165,13 @@
   display: none;
 }
 
-.main__list-todo_list .editMode .input-text,
-.main__completed_list .editMode .input-text {
+.main__list-todo_list .edit-mode .input-text,
+.main__completed_list .edit-mode .input-text {
   display: inline-block;
   width: 224px;
 }
 
-.main__list-todo_list .editMode .item-label,
-.main__completed_list .editMode .item-label {
+.main__list-todo_list .edit-mode .item-label,
+.main__completed_list .edit-mode .item-label {
   display: none;
 }

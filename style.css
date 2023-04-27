@@ -40,23 +40,24 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.accept-job {
   display: flex;
 }
 
-.main__list-todo_list,
-.main__completed_list {
+.todo__list,
+.completed__list {
   margin: 0;
   padding: 0px;
 }
 
 .list-item, 
-.main__header-section {
+.section__header {
   list-style: none;
 }
 
-.input-checkbox,
-.input-text,
+.accept-job__input-task,
+.list-item__input-text,
+.list-item__input-checkbox,
 .button {
   outline: none;
 }
@@ -76,8 +77,8 @@
 }
 
 /* Heading */
-.main__header-section,
-.label__new-task {
+.section-header,
+.new-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,7 +88,8 @@
   text-transform: uppercase;
 }
 
-.input-text {
+.accept-job__input-task,
+.list-item__input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -100,17 +102,18 @@
   color: #888;
 }
 
-.input-text:focus {
+.accept-job__input-task:focus,
+.list-item__input-text:focus {
   color: #333;
 }
 
 /* New Task */
-.label__new-task {
+.new-task__label {
   display: block;
   margin: 0 0 20px;
 }
 
-.new {
+.accept-job__input-task {
   width: 318px;
 }
 
@@ -128,7 +131,7 @@
   vertical-align: middle;
 }
 
-.input-checkbox {
+.list-item__input-checkbox {
   margin: 0 10px;
 }
 
@@ -139,39 +142,36 @@
   width: 226px;
 }
 
-.list-item > .input-text {
+.list-item__input-text {
   width: 226px;
 }
 
-.button-icon {
+.button__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button-icon:hover {
+.button__icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.main__completed_list .task {
+.completed__list .task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.main__list-todo_list .list-item .input-text,
-.main__completed_list .list-item .input-text {
+.list-item__input-text {
   display: none;
 }
 
-.main__list-todo_list .edit-mode .input-text,
-.main__completed_list .edit-mode .input-text {
+.edit-mode .list-item__input-text {
   display: inline-block;
   width: 224px;
 }
 
-.main__list-todo_list .edit-mode .item-label,
-.main__completed_list .edit-mode .item-label {
+.edit-mode .list-item__label {
   display: none;
 }

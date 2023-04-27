@@ -45,7 +45,7 @@
 }
 
 .todo__list,
-.main__completed_list {
+.completed__list {
   margin: 0;
   padding: 0px;
 }
@@ -165,24 +165,24 @@
 }
 
 /* Completed */
-.main__completed_list .task {
+.completed__list .task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .todo__list .list-item .list-item__input-text,
-.main__completed_list .list-item .input-text {
+.completed__list .list-item .list-item__input-text {
   display: none;
 }
 
 .todo__list .edit-mode .list-item__input-text,
-.main__completed_list .edit-mode .input-text {
+.completed__list .edit-mode .list-item__input-text {
   display: inline-block;
   width: 224px;
 }
 
 .todo__list .edit-mode .list-item__label,
-.main__completed_list .edit-mode .item-label {
+.completed__list .edit-mode .list-item__label {
   display: none;
 }
